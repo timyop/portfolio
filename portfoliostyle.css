@@ -1,6 +1,7 @@
 html {
 	font-size: 10px;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 body {
 	margin: 0;
@@ -9,22 +10,33 @@ body {
 
 
 h1 {
-	font-size: 5rem;
+	font-size: 7rem;
+	color:  #FFFF00;
+	font-family: 'Anton', sans-serif;
+
 }
 
-
-
 h2 {
-	font-size: 3rem;
+	font-size: 4rem;
+	color: #b1fae2;
+	font-family: 'Anton', sans-serif;
+
 }
 
 h3 {
-	font-size: 2rem;
+	font-size: 2.9rem;
+	color: #FFFF00;
+	padding-bottom: 10px;
+	font-family: 'Anton', sans-serif;
 }
 
 p {
 	font-size: 2rem;
+	font-family: 'Exo 2', sans-serif;
+	color: #f7faf9;
 }
+
+
 
 nav {
 	background-color: #4393e8;
@@ -37,12 +49,12 @@ nav {
 	width: 100vw;
 }
 
-.link {
-    color: #2a3749;
+.nav_link {
+    color: #000000;
     text-decoration: none;
 	padding: 30px;
-	font-size: 1.5rem;
-	
+	font-size: 2.5rem;
+	font-weight: bold;
 }
 
 header {
@@ -55,6 +67,7 @@ header {
 	align-items: center;
 	padding-top: 65px;
 	margin: 0px;
+	
 }
 
 #coder {
@@ -72,7 +85,7 @@ header {
 	flex-direction: column;
 }
 
-.paragraph {
+.bio {
 	width: 50%;
 	display: block;
 	text-align: center;
@@ -91,8 +104,9 @@ header {
 	
 }
 
-.project {
-	border: 1px solid #2a3749;
+.project_container {
+	border: 10px solid #808080;
+	border-radius: 25px;
 	padding: 50px;
 	margin-bottom: 50px;
 	margin: 0 auto;
@@ -100,7 +114,7 @@ header {
 	margin-top: 50px;
 }
 
-.project .content {
+.project_container .content {
 	display: flex;
 	justify-content: space-between;
 	gap: 50px ;
@@ -126,19 +140,20 @@ header {
 	padding-left: 80px;
 	flex-direction: row;
 	text-decoration: none;
+	color: #9650ab;
 }
 
 
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 817px) {
 	html{
-		font-szie: 12px;
+		font-szie: 15px;
 	}
 	
-	nav {
-		padding: 10px 0;
+	.nav_links nav {
+		padding-top: 60px;
 	}
 	
 	h1 {
@@ -154,7 +169,7 @@ header {
 		padding-right: 10px;
 		padding-left: 10px;
 	}
-	.project .content {
+	.project_container .content {
 		display: flex; 
 		flex-direction: column;
 	}
