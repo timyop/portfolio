@@ -1,21 +1,42 @@
 html {
 	font-size: 10px;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 body {
 	margin: 0;
+
 }
 
+
 h1 {
-	font-size: 5rem;
+	font-size: 7rem;
+	color:  #FFFF00;
+	font-family: 'Anton', sans-serif;
+
 }
 
 h2 {
-	font-size: 3rem;
+	font-size: 4rem;
+	color: #b1fae2;
+	font-family: 'Anton', sans-serif;
+
+}
+
+h3 {
+	font-size: 2.9rem;
+	color: #FFFF00;
+	padding-bottom: 10px;
+	font-family: 'Anton', sans-serif;
 }
 
 p {
 	font-size: 2rem;
+	font-family: 'Exo 2', sans-serif;
+	color: #f7faf9;
 }
+
+
 
 nav {
 	background-color: #4393e8;
@@ -28,12 +49,12 @@ nav {
 	width: 100vw;
 }
 
-a {
-    color: #2a3749;
+.nav_link {
+    color: #000000;
     text-decoration: none;
-	padding: 37px;
-	font-size: 2rem;
-	
+	padding: 30px;
+	font-size: 2.5rem;
+	font-weight: bold;
 }
 
 header {
@@ -46,6 +67,7 @@ header {
 	align-items: center;
 	padding-top: 65px;
 	margin: 0px;
+	
 }
 
 #coder {
@@ -63,18 +85,99 @@ header {
 	flex-direction: column;
 }
 
-.paragraph {
+.bio {
 	width: 50%;
 	display: block;
 	text-align: center;
 	margin: 0 auto;
 }
 
+#portfolio {
+	background-color: #e85f8f;
+	display: flex;
+	padding-top:50px;
+	padding-left: 50px;
+	padding-bottom: 200px;
+	padding-right: 50px;
+	flex-direction: column;
+	text-align: center;
+	
+}
+
+.project_container {
+	border: 10px solid #808080;
+	border-radius: 25px;
+	padding: 50px;
+	margin-bottom: 50px;
+	margin: 0 auto;
+	width: 85%;
+	margin-top: 50px;
+}
+
+.project_container .content {
+	display: flex;
+	justify-content: space-between;
+	gap: 50px ;
+	
+}
+
+#socials {
+	background-color: #f06ee5;
+	display: flex; 
+	justify-content: center;
+	padding: 10px 0;
+	padding-bottom: 75px;
+	align-items: center;
+	z-index: 10;
+	width: 100vw;
+	flex-direction: column;
+}        
+
+.buttons {
+	display: flex;
+	font-size: 6rem;
+	padding-right: 80px;
+	padding-left: 80px;
+	flex-direction: row;
+	text-decoration: none;
+	color: #9650ab;
+}
 
 
 
 
 
-
+@media screen and (max-width: 817px) {
+	html{
+		font-szie: 15px;
+	}
+	
+	.nav_links nav {
+		padding-top: 60px;
+	}
+	
+	h1 {
+		font-size: 4rem;
+	}
+	.project-image {
+		width: 100%;
+	}
+	.project  {
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.project_container .content {
+		display: flex; 
+		flex-direction: column;
+	}
+	
+	.buttons	{
+		padding: 10px;
+	}
+	
+}
 
 
