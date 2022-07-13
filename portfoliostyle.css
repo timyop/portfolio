@@ -63,7 +63,7 @@ nav {
 	font-family:'Oswald', sans-serif;
 }
 
-a:hover {
+.nav_link:hover {
 	text-decoration: none;
 	color:#FAFAFA;
 	font-weight: bold;
@@ -114,6 +114,7 @@ header {
 	padding-right: 50px;
 	flex-direction: column;
 	text-align: center;
+
 	
 }
 
@@ -151,13 +152,14 @@ max-width: 350px;
 	z-index: 10;
 	width: 100vw;
 	flex-direction: column;
+	margin: 0;
 }        
 
 .buttons {
 	display: flex;
 	font-size: 6rem;
-	padding-right: 80px;
-	padding-left: 80px;
+	padding-right: 40px;
+	padding-left: 40px;
 	flex-direction: row;
 	text-decoration: none;
 	color: #9650ab;
@@ -172,15 +174,29 @@ max-width: 350px;
 	h1 {
 		font-size: 4rem;
 	}
-	.project-image {
-		width: 100%;
+
+	.bio {
+		max-width: 300px;
 	}
-	.project  {
+
+	p {
+		max-width: 300px;
+	}
+
+	.nav_link {
+		font-size: 1.8rem;
+	}
+
+	.project-image, #coder {
+		max-width: 250px
+	}
+	.project_container  {
 		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
 		padding-right: 10px;
 		padding-left: 10px;
+		max-width: 350px;
 	}
 	.project_container .content {
 		display: flex; 
